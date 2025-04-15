@@ -1,0 +1,17 @@
+{
+  "version": "5.6.3",
+  "extends": "@tsconfig/node18/tsconfig.json",
+  "compilerOptions": {
+    "lib": ["ES2021"],
+    
+    "strict": true,
+    "skipLibCheck": true,
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "rootDir": "./src",
+    "outDir": "./dist",
+  },
+  "include": ["src/**/*.ts", "src/services/chains/pdf-process-rag/operations.ts", "src/activities/parsers/check-is-plain-text.ts", "src/activities/parsers/index.ts", "src/activities/index.ts", "src/activities/embeddings/convert-and-store-document.ts", "src/activities/embeddings/index.ts", "src/activities/embeddings/saveBinaryToTempFile.mts"],
+  "exclude": ["node_modules"]
+}
